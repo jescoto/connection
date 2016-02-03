@@ -1,0 +1,43 @@
+@import "bootstrap-overrides";
+@import "shadows";
+
+//// Colors
+@primary-50: #00416a;
+@primary-100: #254f6e;
+@primary-200: #0071bb;
+@primary-300: #2282b6;
+
+// header
+.topHeader {
+  height: 2.5em;
+  min-height: 34px;
+  //color: white;
+  margin-top: 1em;
+  border-radius: 2px;
+  .dropdown-menu {
+    background: @primary-50;
+    color: #fff;
+    padding: 1.75em;
+    width: 35em;
+    h5 {
+      margin-top: 0px;
+    }
+  }
+}
+
+.location_info {
+  width: 33.33%;
+  float: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.location_img {
+  width: 33.33%;
+  float: left;
+  max-width: 160px;
+  padding: 0.25em;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

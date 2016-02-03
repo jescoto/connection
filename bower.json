@@ -1,0 +1,22 @@
+{
+  "name": "connectionchurch",
+  "authors": [
+    "jescoto <jordanescoto@gmail.com>"
+  ],
+  "description": "",
+  "main": "?",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "http://connection-church.com/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

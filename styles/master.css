@@ -1,0 +1,104 @@
+.navbar-default {
+  background-color: #2282b6;
+  border-color: #1d709c;
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #e3f2fd;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #e3f2fd;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #e3f2fd;
+  background-color: #1d709c;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #e3f2fd;
+  background-color: #1d709c;
+}
+.navbar-default .navbar-toggle {
+  border-color: #1d709c;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #1d709c;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+  color: #e3f2fd;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #e3f2fd;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #e3f2fd;
+    background-color: #1d709c;
+  }
+}
+.navbar-nav > li > a,
+.navbar-brand {
+  padding-top: 0.5em !important;
+  padding-bottom: 0.5em !important;
+}
+.topHeader {
+  height: 2.5em;
+  min-height: 34px;
+  margin-top: 1em;
+  border-radius: 2px;
+}
+.topHeader .dropdown-menu {
+  background: #00416a;
+  color: #fff;
+  padding: 1.75em;
+  width: 35em;
+}
+.topHeader .dropdown-menu h5 {
+  margin-top: 0px;
+}
+.location_info {
+  width: 33.33%;
+  float: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.location_img {
+  width: 33.33%;
+  float: left;
+  max-width: 160px;
+  padding: 0.25em;
+}
+.location_img img {
+  width: 100%;
+  height: auto;
+}
