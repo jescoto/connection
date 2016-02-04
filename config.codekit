@@ -22,6 +22,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/header-hero.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 770728,
+		"inputAbbreviatedPath": "\/images\/header-hero.png",
+		"outputAbbreviatedPath": "\/images\/header-hero.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/logo-small.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -29,6 +40,39 @@
 		"initialSize": 9887,
 		"inputAbbreviatedPath": "\/images\/logo-small.png",
 		"outputAbbreviatedPath": "\/images\/logo-small.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/section-1-graph.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17719,
+		"inputAbbreviatedPath": "\/images\/section-1-graph.png",
+		"outputAbbreviatedPath": "\/images\/section-1-graph.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/section-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31204,
+		"inputAbbreviatedPath": "\/images\/section-2.jpg",
+		"outputAbbreviatedPath": "\/images\/section-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/section-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 125479,
+		"inputAbbreviatedPath": "\/images\/section-3.jpg",
+		"outputAbbreviatedPath": "\/images\/section-3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
