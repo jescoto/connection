@@ -86,6 +86,21 @@
 .topHeader .dropdown-menu h5 {
   margin-top: 0px;
 }
+.mainHeader {
+  background: #254f6e;
+  border-color: #0071bb;
+  height: 5em;
+}
+.logo {
+  width: 20em;
+}
+.logo img {
+  width: 100%;
+}
+#campus-locations > ul:nth-child(1) > li:nth-child(1) {
+  padding: 0.5em;
+  color: #fff;
+}
 .location_info {
   width: 33.33%;
   float: left;
