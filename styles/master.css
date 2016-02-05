@@ -205,6 +205,9 @@ fieldset[disabled] .btn-line.active {
   position: relative;
   background: #0071bb;
 }
+#app {
+  overflow-x: hidden;
+}
 .topHeader {
   height: 2.5em;
   min-height: 34px;
@@ -369,7 +372,6 @@ fieldset[disabled] .btn-line.active {
 }
 .footer-group {
   float: left;
-  /* Medium devices (desktops, 992px and up) */
 }
 .footer-group h4 {
   text-transform: uppercase;
@@ -380,11 +382,6 @@ fieldset[disabled] .btn-line.active {
   }
 }
 @media (min-width: 768px) {
-  .footer-group {
-    width: 50%;
-  }
-}
-@media (min-width: 992px) {
   .footer-group {
     width: 20%;
   }
