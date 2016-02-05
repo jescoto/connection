@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="styles/master.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -85,28 +86,35 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Share This:</a></li>
-                    <li><a href="#">fb</a></li>
-                    <li><a href="#">tw</a></li>
+                    <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
-        <nav class="navbar navbar-default mainHeader">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="images/logo-full.png" width="280px"></a>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">About Connection</a></li>
-                    <li><a href="#">Message</a></li>
-                    <li><a href="#">Give</a></li>
-                </ul>
+        <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo-full.png"></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-menubuilder">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">About Connection</a></li>
+                        <li><a href="#">Message</a></li>
+                        <li><a href="#">Give</a></li>
+                    </ul>
+                </div>
             </div>
-        </nav>
+        </div>
 
     <!-- Content -->
 
     <div class="row">
         <div class="col-xs-12 hero-txt section">
             <h1>The One & One Project</h1>
-            <p><a class="btn btn-default">Watch the Video</a></p>
+            <p><a class="btn btn-line">Watch the Video</a></p>
         </div>
         <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 section">
             <h3 class="section-header">What is the One & One Project?</h3>
@@ -123,31 +131,41 @@
         <h3 class="section-header">WHAT’S ALREADY BEEN DONE</h3>
         <img src="images/section-3.jpg" />
     </div>
-
-    <div class="box-section col-sm-6 col-md-6">
-        <h2 class="box-header">Local Outreach</h2>
-            <p>Since beginning the One & One Project, we’ve had a strong conviction for reaching more people with the Gospel of Jesus. We want to help change the culture of the communities we’re now apart of. We want these communities to be known for what God’s doing in and through His church. We know God wants The One & One Project to be something only He can take credit for and we know He can do it.</p>
-    </div>
-
-    <div class="box-section col-sm-6 col-md-6">
-        <h2 class="box-header">International Missions</h2>
-        <p>Through the One & One Project, we’ve been able to support missionaries and organizations internationally in Honduras, India, Guatemala, and other countries where we have been able to build churches, fund orphanages, and send new missionaries to the most desperate areas of the world. We want to continue partnering with these people and more to make Jesus’ name famous across the globe.</p>
-    </div>
-
-    <div class="box-section col-sm-6 col-md-6">
-        <h2 class="box-header">Church Planting</h2>
-        <p>The vision of Connection Church is to reach 10,000 people through multiple campuses and church plants. It’s vital to the mission God’s given us to connect people to a growing relationship with Jesus Christ to continue growing as a church family. We know that one campus can’t reach everyone, so we’ve already begun  reaching more people through planting churches in Vidalia, Ga. and Millen, Ga., with more to come!</p>
-    </div>
-
-    <div class="box-section col-sm-6 col-md-6">
-        <h2 class="box-header">Permanent Facility</h2>
-        <p>When you’re a growing church, a home base is incredibly helpful. When you don’t have to focus on how to make things work for a service and also make it fit in a trailer, you’re able to focus so much more effort on continuing to reach out to the people we’re called to reach. We’ve been fortunate to have built and moved in to our first permanent facility at our Statesboro campus.</p>
-    </div>
 </div>
+    <div class="row">
+
+            <div class="box-section col-sm-6 col-md-6" id="box-1">
+
+                <h2 class="box-header">Local Outreach</h2>
+                <p>Since beginning the One & One Project, we’ve had a strong conviction for reaching more people with the Gospel of Jesus. We want to help change the culture of the communities we’re now apart of. We want these communities to be known for what God’s doing in and through His church. We know God wants The One & One Project to be something only He can take credit for and we know He can do it.</p>
+                <a class="btn btn-line">Learn More</a>
+            </div>
+
+        <div class="box-section col-sm-6 col-md-6" id="box-2">
+            <h2 class="box-header">International Missions</h2>
+            <p>Through the One & One Project, we’ve been able to support missionaries and organizations internationally in Honduras, India, Guatemala, and other countries where we have been able to build churches, fund orphanages, and send new missionaries to the most desperate areas of the world. We want to continue partnering with these people and more to make Jesus’ name famous across the globe.</p>
+            <a class="btn btn-line">Learn More</a>
+        </div>
+
+        <div class="box-section col-sm-6 col-md-6" id="box-3">
+            <h2 class="box-header">Church Planting</h2>
+            <p>The vision of Connection Church is to reach 10,000 people through multiple campuses and church plants. It’s vital to the mission God’s given us to connect people to a growing relationship with Jesus Christ to continue growing as a church family. We know that one campus can’t reach everyone, so we’ve already begun  reaching more people through planting churches in Vidalia, Ga. and Millen, Ga., with more to come!</p>
+            <a class="btn btn-line">Learn More</a>
+        </div>
+
+        <div class="box-section col-sm-6 col-md-6" id="box-4">
+            <h2 class="box-header">Permanent Facility</h2>
+            <p>When you’re a growing church, a home base is incredibly helpful. When you don’t have to focus on how to make things work for a service and also make it fit in a trailer, you’re able to focus so much more effort on continuing to reach out to the people we’re called to reach. We’ve been fortunate to have built and moved in to our first permanent facility at our Statesboro campus.</p>
+            <a class="btn btn-line">Learn More</a>
+        </div>
+    </div>
+
+
 <div class="row footer">
     <div class="container">
 
         <div class="footer-group">
+            <h4>Jesus</h4>
             <ul class="list-unstyled">
                 <li><a href="http://connection-church.com/jesus/beliefs/">Beliefs</a></li>
                 <li><a href="http://connection-church.com/messages/sermon-archive/">Teaching</a></li>
@@ -156,6 +174,7 @@
         </div>
 
         <div class="footer-group">
+            <h4>Visit</h4>
             <ul class="list-unstyled">
                 <li><a href="http://connection-church.com/visit/vidalia">Vidalia Campus</a></li>
                 <li><a href="http://connection-church.com/visit/millen">Millen Campus</a></li>
@@ -165,6 +184,7 @@
         </div>
 
         <div class="footer-group">
+            <h4>Connect</h4>
             <ul class="list-unstyled">
                 <li><a href="http://connection-church.com/connect/next-steps">Next Steps</a></li>
                 <li><a href="http://connection-church.com/connect/next-steps/connect-groups">Connect Groups</a></li>
@@ -175,6 +195,7 @@
         </div>
 
         <div class="footer-group">
+            <h4>Messages</h4>
             <ul class="list-unstyled">
                 <li><a href="http://connection-church.com/messages/sermon-archive">Teaching</a></li>
                 <li><a href="http://connection-church.com/messages/stories">Stories</a></li>
@@ -182,6 +203,7 @@
         </div>
 
         <div class="footer-group">
+            <h4>Give</h4>
             <ul class="list-unstyled">
                 <li><a href="http://connection-church.com/give">Online Giving</a></li>
                 <li><a href="http://connection-church.com/give/give-faqs">Giving FAQs</a></li>

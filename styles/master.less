@@ -1,12 +1,21 @@
 @import "bootstrap-overrides";
 @import "shadows";
 
+/// fonts
+
+// media queries
+@small: ~'(max-width: 768px)';
+@med: ~'(max-width: 992px)';
+@lg: ~'(max-width: 1200px)';
+
+
 //// Colors
 @primary-50: #00416a;
 @primary-100: #254f6e;
 @primary-200: #0071bb;
 @primary-300: #2282b6;
 @footer: #f1f2f2;
+@black: #404041;
 
 // header
 .topHeader {
@@ -96,6 +105,7 @@
 }
 
 .section {
+  //z-index: -1;
   position: relative;
   margin-bottom: 4.875em;
   h3 {
@@ -113,7 +123,9 @@
 
 .section:nth-child(2) {
   margin-top: 15em;
-
+  @media @small {
+    margin-top: 22em;
+  }
 }
 
 .box-section {
@@ -130,12 +142,18 @@
   .container {
     border-bottom: 1px solid #404041;
   }
+  @media @small {
+    padding-left: 1em;
+  }
 }
 
 .footer-group {
   float: left;
+  h4 {
+    text-transform: uppercase;
+  }
   @media (max-width: 768px){
-    width: 100%;
+    width: 50%;
   }
   @media (min-width: 768px){
     width: 50%;
@@ -144,5 +162,47 @@
   @media (min-width: 992px) {
     width: 20%;
   }
+}
 
+body > div.row.footer > div > div > ul > li > a {
+  color: @black;
+}
+
+.box-section {
+  color: #fff;
+  @media(min-width: @small) {
+
+  }
+}
+
+#box-1 {
+  background: url(../images/box-section-1.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#box-2 {
+  background: url(../images/box-section-2.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#box-3 {
+  background: url(../images/box-section-3.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#box-4 {
+  background: url(../images/box-section-4.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

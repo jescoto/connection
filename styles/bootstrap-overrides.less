@@ -50,6 +50,7 @@
       background-color: @colDefault; }}
   .navbar-collapse,
   .navbar-form {
+    background: #fff;
     border-color: @colDefault; }
   .navbar-link {
     color: @colDefault;
@@ -67,7 +68,141 @@
         background-color: @bgHighlight; }}}
 }
 
-.navbar-nav>li>a, .navbar-brand {
-  padding-top: 0.5em !important;
-  padding-bottom: 0.5em !important;
+#custom-bootstrap-menu {
+  height: 4.875em;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+  color: rgba(255, 255, 255, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+  font-size: 14px;
+  background-color: rgba(37, 79, 110, 1);
+  border-width: 0px;
+  border-radius: 2px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(34, 130, 182, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+  border-color: #2282b6;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+  background-color: #2282b6;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+  background-color: #2282b6;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #254f6e;
+}
+
+#custom-bootstrap-menu > div > div.collapse.navbar-collapse.navbar-menubuilder > ul > li > a {
+  @media(min-width: 768px){
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+}
+
+#campus-locations > ul > li > a {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: none;
+}
+
+.navbar-brand {
+  max-width: 50%;
+}
+
+.navbar-brand img {
+  //max-width: 280px;
+  @media @lg {
+    width: 280px;
+  }
+  @media @med {
+    width: 280px;
+  }
+  @media @small {
+    width: 200px;
+  }
+}
+
+#custom-bootstrap-menu > div > div.navbar-collapse.navbar-menubuilder.collapse.in {
+  z-index: 99;
+  margin-top: 4px;
+  background: #fff;
+  position: relative;
+  > ul > li > a {
+    color: @primary-200;
+  }
+}
+
+#custom-bootstrap-menu > div > div.navbar-header > button > span {
+  background-color: #fff !important;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+  background: @primary-200;
+}
+
+#custom-bootstrap-menu > div > div.navbar-header > button{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.btn-line {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: #fff;
+  border-width: 4px;
+}
+
+.btn-line:hover,
+.btn-line:focus,
+.btn-line:active,
+.btn-line.active,
+.open .dropdown-toggle.btn-line {
+  color: #ffffff;
+  background-color: rgba(255,255,255, 0.4);
+  border-color: #fff;
+}
+
+.btn-line:active,
+.btn-line.active,
+.open .dropdown-toggle.btn-line {
+  background-image: none;
+}
+
+.btn-line.disabled,
+.btn-line[disabled],
+fieldset[disabled] .btn-line,
+.btn-line.disabled:hover,
+.btn-line[disabled]:hover,
+fieldset[disabled] .btn-line:hover,
+.btn-line.disabled:focus,
+.btn-line[disabled]:focus,
+fieldset[disabled] .btn-line:focus,
+.btn-line.disabled:active,
+.btn-line[disabled]:active,
+fieldset[disabled] .btn-line:active,
+.btn-line.disabled.active,
+.btn-line[disabled].active,
+fieldset[disabled] .btn-line.active {
+  background-color: transparent;
+  border-color: #fff;
 }
