@@ -50,8 +50,9 @@
       background-color: @colDefault; }}
   .navbar-collapse,
   .navbar-form {
-    background: #fff;
-    border-color: @colDefault; }
+    //background: #fff;
+    border-color: @colDefault;
+  }
   .navbar-link {
     color: @colDefault;
     &:hover {
@@ -205,4 +206,23 @@ fieldset[disabled] .btn-line:active,
 fieldset[disabled] .btn-line.active {
   background-color: transparent;
   border-color: #fff;
+}
+
+
+#campus-locations > ul > li.dropdown.open > div > div > ul > li > a {
+  color: #fff;
+}
+
+#topContent > nav > div.navbar-header > span {
+  margin: 0px;
+  padding: 6px;
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+#campus-locations {
+  z-index: 100;
+  position: relative;
+  background: @primary-200;
 }

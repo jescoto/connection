@@ -55,21 +55,41 @@
 }
 
 .location_info {
-  width: 33.33%;
   float: left;
   padding-left: 0.5em;
   padding-right: 0.5em;
+  margin-bottom: 1em;
+  @media @small {
+    width: 33.33%;
+  }
+  @media @med {
+    width: 50%;
+  }
+  @media @lg {
+    width: 100%;
+  }
 }
 .location_img {
   width: 33.33%;
   float: left;
   max-width: 160px;
   padding: 0.25em;
+  margin-bottom: 1em;
   img {
     width: 100%;
     height: auto;
   }
+  @media @small {
+    width: 33.33%;
+  }
+  @media @med {
+    width: 50%;
+  }
+  @media @lg {
+    width: 100%;
+  }
 }
+
 
 #topContent {
   margin-top: -29.18em;
@@ -96,6 +116,12 @@
   color: #fff !important;
   h1 {
     font-size: 3.6875em;
+  }
+}
+
+#topContent > div.row > div.col-xs-12.hero-txt.section > p {
+  @media @small {
+    margin-top: 2em;
   }
 }
 
@@ -144,6 +170,15 @@
   }
   @media @small {
     padding-left: 1em;
+  }
+}
+
+.footer-logo {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  img {
+    width: 40px;
   }
 }
 

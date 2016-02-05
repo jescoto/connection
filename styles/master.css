@@ -43,7 +43,6 @@
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  background: #fff;
   border-color: #ffffff;
 }
 .navbar-default .navbar-link {
@@ -194,6 +193,21 @@ fieldset[disabled] .btn-line.active {
   background-color: transparent;
   border-color: #fff;
 }
+#campus-locations > ul > li.dropdown.open > div > div > ul > li > a {
+  color: #fff;
+}
+#topContent > nav > div.navbar-header > span {
+  margin: 0px;
+  padding: 6px;
+  background: none;
+  border: none;
+  color: #fff;
+}
+#campus-locations {
+  z-index: 100;
+  position: relative;
+  background: #0071bb;
+}
 .topHeader {
   height: 2.5em;
   min-height: 34px;
@@ -225,20 +239,51 @@ fieldset[disabled] .btn-line.active {
   color: #fff;
 }
 .location_info {
-  width: 33.33%;
   float: left;
   padding-left: 0.5em;
   padding-right: 0.5em;
+  margin-bottom: 1em;
+}
+@media (max-width: 768px) {
+  .location_info {
+    width: 33.33%;
+  }
+}
+@media (max-width: 992px) {
+  .location_info {
+    width: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .location_info {
+    width: 100%;
+  }
 }
 .location_img {
   width: 33.33%;
   float: left;
   max-width: 160px;
   padding: 0.25em;
+  margin-bottom: 1em;
 }
 .location_img img {
   width: 100%;
   height: auto;
+}
+@media (max-width: 768px) {
+  .location_img {
+    width: 33.33%;
+  }
+}
+@media (max-width: 992px) {
+  .location_img {
+    width: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .location_img {
+    width: 100%;
+  }
 }
 #topContent {
   margin-top: -29.18em;
@@ -263,6 +308,11 @@ fieldset[disabled] .btn-line.active {
 }
 .hero-txt h1 {
   font-size: 3.6875em;
+}
+@media (max-width: 768px) {
+  #topContent > div.row > div.col-xs-12.hero-txt.section > p {
+    margin-top: 2em;
+  }
 }
 .section-header {
   text-transform: uppercase;
@@ -308,6 +358,14 @@ fieldset[disabled] .btn-line.active {
   .footer {
     padding-left: 1em;
   }
+}
+.footer-logo {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.footer-logo img {
+  width: 40px;
 }
 .footer-group {
   float: left;
