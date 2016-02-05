@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif|Open+Sans:400,800' rel='stylesheet' type='text/css'>
     <link href="styles/master.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,6 +23,14 @@
     <![endif]-->
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div id="app">
 <div id="hero"></div>
 <div class="container" id="topContent">
@@ -142,8 +151,8 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Share This:</a></li>
-                    <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.facebook.com/sharer/sharer.php?u=http://connection-church.com/&title=Connection%20Church"><i class="fa fa-facebook-official"></i></a></li>
+                    <li><a href="http://twitter.com/intent/tweet?status=Connection%20Church+http://connection-church.com/"><i class="fa fa-twitter"></i></a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
@@ -157,9 +166,9 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-menubuilder">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">About Connection</a></li>
-                        <li><a href="#">Message</a></li>
-                        <li><a href="#">Give</a></li>
+                        <li><a href="http://connection-church.com/visit/welcome/">About Connection</a></li>
+                        <li><a href="http://connection-church.com/sermon-archive/">Messages</a></li>
+                        <li><a href="https://connectionchurch.securegive.com/SG/WebOnline/Home/Index?WO=connectionchurch">Give</a></li>
                     </ul>
                 </div>
             </div>
@@ -170,7 +179,7 @@
     <div class="row">
         <div class="col-xs-12 hero-txt section">
             <h1>The One & One Project</h1>
-            <p><a class="btn btn-line">Watch the Video</a></p>
+            <p><a class="btn btn-line" id="hero-video">Watch the Video</a></p>
         </div>
         <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 section">
             <h3 class="section-header">What is the One & One Project?</h3>
@@ -194,29 +203,21 @@
 
                 <h2 class="box-header">Local Outreach</h2>
                 <p>Since beginning the One & One Project, we’ve had a strong conviction for reaching more people with the Gospel of Jesus. We want to help change the culture of the communities we’re now apart of. We want these communities to be known for what God’s doing in and through His church. We know God wants The One & One Project to be something only He can take credit for and we know He can do it.</p>
-                <br />
-                <a class="btn btn-line">Learn More</a>
             </div>
 
         <div class="box-section col-sm-6 col-md-6" id="box-2">
             <h2 class="box-header">International Missions</h2>
             <p>Through the One & One Project, we’ve been able to support missionaries and organizations internationally in Honduras, India, Guatemala, and other countries where we have been able to build churches, fund orphanages, and send new missionaries to the most desperate areas of the world. We want to continue partnering with these people and more to make Jesus’ name famous across the globe.</p>
-            <br />
-            <a class="btn btn-line">Learn More</a>
         </div>
 
         <div class="box-section col-sm-6 col-md-6" id="box-3">
             <h2 class="box-header">Church Planting</h2>
             <p>The vision of Connection Church is to reach 10,000 people through multiple campuses and church plants. It’s vital to the mission God’s given us to connect people to a growing relationship with Jesus Christ to continue growing as a church family. We know that one campus can’t reach everyone, so we’ve already begun  reaching more people through planting churches in Vidalia, Ga. and Millen, Ga., with more to come!</p>
-            <br />
-            <a class="btn btn-line">Learn More</a>
         </div>
 
         <div class="box-section col-sm-6 col-md-6" id="box-4">
             <h2 class="box-header">Permanent Facility</h2>
             <p>When you’re a growing church, a home base is incredibly helpful. When you don’t have to focus on how to make things work for a service and also make it fit in a trailer, you’re able to focus so much more effort on continuing to reach out to the people we’re called to reach. We’ve been fortunate to have built and moved in to our first permanent facility at our Statesboro campus.</p>
-            <br />
-            <a class="btn btn-line">Learn More</a>
         </div>
     </div>
 
@@ -279,9 +280,27 @@
 </div>
 </div>
 
+<div id="hero-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="hero-video" aria-hidden="true">
+    <div class="modal-dialog">
+        <a class="btn btn-danger" type="button" id="modal-close"><i class="fa fa-close"></i></a>
+        <iframe id="video" src="" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+</div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="libs/bootstrap/dist/js/bootstrap.min.js" rel="stylesheet"></script>
+    <script>
+        $("#hero-video").on("click", function(){
+            var url = 'https://player.vimeo.com/video/154320406?autoplay=1';
+            $("#video").attr("src", url);
+            $('#hero-modal').modal('show');
+        });
+        $("#modal-close").on("click", function(){
+           $("#video").removeAttr("src");
+            $('#hero-modal').modal('hide')
+        });
+    </script>
 </body>
 </html>
