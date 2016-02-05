@@ -240,20 +240,16 @@ fieldset[disabled] .btn-line.active {
   padding-left: 0.5em;
   padding-right: 0.5em;
   margin-bottom: 1em;
+  width: 33.33%;
 }
 @media (max-width: 768px) {
   .location_info {
-    width: 33.33%;
+    width: 100%;
   }
 }
 @media (max-width: 992px) {
   .location_info {
     width: 50%;
-  }
-}
-@media (max-width: 1200px) {
-  .location_info {
-    width: 100%;
   }
 }
 .location_img {
@@ -269,17 +265,12 @@ fieldset[disabled] .btn-line.active {
 }
 @media (max-width: 768px) {
   .location_img {
-    width: 33.33%;
+    width: 100%;
   }
 }
 @media (max-width: 992px) {
   .location_img {
     width: 50%;
-  }
-}
-@media (max-width: 1200px) {
-  .location_img {
-    width: 100%;
   }
 }
 #topContent {
