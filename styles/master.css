@@ -192,12 +192,13 @@ fieldset[disabled] .btn-line.active {
 #campus-locations > ul > li.dropdown.open > div > div > ul > li > a {
   color: #fff;
 }
-#topContent > nav > div.navbar-header > span {
+#topContent > nav > div.navbar-header > a {
   margin: 0px;
   padding: 6px;
   background: none;
   border: none;
   color: #fff;
+  text-decoration: none;
 }
 #campus-locations {
   z-index: 100;
