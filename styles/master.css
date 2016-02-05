@@ -66,6 +66,9 @@
     background-color: #1d709c;
   }
 }
+.navbar {
+  margin-bottom: 10px;
+}
 #custom-bootstrap-menu {
   height: 4.875em;
 }
@@ -279,7 +282,7 @@ fieldset[disabled] .btn-line.active {
   }
 }
 #topContent {
-  margin-top: -29.18em;
+  margin-top: -35em;
   position: relative;
 }
 #hero {
@@ -288,7 +291,7 @@ fieldset[disabled] .btn-line.active {
   left: 0;
   width: 100%;
   z-index: -99;
-  height: 29.18em;
+  height: 35em;
   background: url(../images/header-hero.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -296,11 +299,15 @@ fieldset[disabled] .btn-line.active {
   background-size: cover;
 }
 .hero-txt {
+  margin-top: 4em;
   text-align: center;
   color: #fff !important;
 }
 .hero-txt h1 {
   font-size: 3.6875em;
+}
+.hero-txt p {
+  margin-top: 3em;
 }
 @media (max-width: 768px) {
   #topContent > div.row > div.col-xs-12.hero-txt.section > p {
@@ -310,6 +317,7 @@ fieldset[disabled] .btn-line.active {
 .section-header {
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 1em;
 }
 .section {
   position: relative;
@@ -327,15 +335,22 @@ fieldset[disabled] .btn-line.active {
   width: 100%;
 }
 .section:nth-child(2) {
-  margin-top: 15em;
+  margin-top: 10em;
 }
 @media (max-width: 768px) {
   .section:nth-child(2) {
-    margin-top: 22em;
+    margin-top: 27em;
   }
 }
 .box-section {
   padding: 4em;
+  text-align: center;
+  height: 400px;
+}
+@media (max-width: 768px) {
+  .box-section {
+    height: 100%;
+  }
 }
 .box-header {
   text-transform: capitalize;

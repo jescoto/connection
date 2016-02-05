@@ -92,7 +92,7 @@
 
 
 #topContent {
-  margin-top: -29.18em;
+  margin-top: -35em;
   position: relative;
 }
 
@@ -103,7 +103,7 @@
   width: 100%;
   z-index: -99;
   //min-height: 100%;
-  height: 29.18em;
+  height: 35em;
   background: url(../images/header-hero.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -112,10 +112,14 @@
 }
 
 .hero-txt {
+  margin-top: 4em;
   text-align: center;
   color: #fff !important;
   h1 {
     font-size: 3.6875em;
+  }
+  p {
+    margin-top: 3em;
   }
 }
 
@@ -128,6 +132,7 @@
 .section-header {
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .section {
@@ -148,14 +153,19 @@
 }
 
 .section:nth-child(2) {
-  margin-top: 15em;
+  margin-top: 10em;
   @media @small {
-    margin-top: 22em;
+    margin-top: 27em;
   }
 }
 
 .box-section {
   padding: 4em;
+  text-align: center;
+  height: 400px;
+  @media @small {
+    height: 100%;
+  }
 }
 
 .box-header {
