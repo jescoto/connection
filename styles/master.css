@@ -113,7 +113,7 @@
   background-color: #254f6e;
 }
 #custom-bootstrap-menu > div > div.collapse.navbar-collapse.navbar-menubuilder > ul > li > a {
-  font-family: museo;
+  font-family: MuseoSansDisplay-Black;
 }
 @media (min-width: 768px) {
   #custom-bootstrap-menu > div > div.collapse.navbar-collapse.navbar-menubuilder > ul > li > a {
@@ -262,6 +262,14 @@ fieldset[disabled] .btn-line.active {
 .topHeader .dropdown-menu h5 {
   margin-top: 0px;
 }
+@media (max-width: 992px) {
+  .topHeader .dropdown-menu {
+    width: 30em;
+  }
+}
+#campus-locations > ul:nth-child(1) > li {
+  font-family: MuseoSansDisplay-Black;
+}
 .mainHeader {
   background: #254f6e;
   border-color: #0071bb;
@@ -290,6 +298,9 @@ fieldset[disabled] .btn-line.active {
 }
 .location_info p {
   font-style: italic;
+  font-family: 'PT Serif', serif;
+}
+.location_info ul li {
   font-family: 'PT Serif', serif;
 }
 @media (max-width: 768px) {
